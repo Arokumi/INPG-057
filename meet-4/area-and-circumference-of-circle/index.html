@@ -1,0 +1,21 @@
+<!Doctype HTML>
+
+<head>
+    <title> calculating area and circumference of a circle with Javascript</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Find the circumference and area of a circle!</h1>
+        <p>Enter the radius of your circle</p>
+        <input type="text" id="RadiusInput"/>
+        <input type="button" value="Calculate" onclick=CalculateCircumferenceArea() />
+    </div>
+    <script>
+        function CalculateCircumferenceArea (){
+            let radius = document.getElementById('RadiusInput').value;
+            alert("The area of your circle is " + (radius * radius * Math.PI) + " whilst the circumference of your circle is " + (2 * Math.PI * radius));
+        }
+    </script>
+</body>
