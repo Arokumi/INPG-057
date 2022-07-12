@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<body>
+
+    <div>
+
+        <h1>Press this button to reveal the date and time!</h1>
+
+        <button id="datebtn">Press Me!</button>
+
+        <p id="date"></p>
+
+        <script>
+            document.getElementById("datebtn").onclick = todayDate;
+
+            function todayDate(){
+                document.getElementById("date").innerHTML = new Date();
+            }
+        </script>
+    </div>
+
+    <div>
+        <h1>Input a number to find its cube</h1>
+        <input type="text" id="numberInput">
+        <button id="buttonSubmit" onclick="calculateCube()">Submit</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function calculateCube(){
+                let number = document.getElementById("numberInput").value;
+                let cubed = number * number * number;
+                document.getElementById("demo").innerHTML = cubed;
+            }
+        </script>
+    </div>
+
+</body>
