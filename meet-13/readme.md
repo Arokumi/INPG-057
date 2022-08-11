@@ -1,0 +1,1 @@
+A callback is a function that is used as a parameter in another function.
